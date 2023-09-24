@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+
+
+body {
+  background-color: silver;
+  color: black;
+  font-family: Arial, sans-serif;
+  
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 450px;
+  margin: auto;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  margin: auto;
+ 
+}
+
+th {
+  font-weight: bold;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+input[type=radio] {
+  margin: 4px 8px 0 0;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.input-control {
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.input-control input {
+			border: 2px solid #f0f0f0;
+			border-radius: 4px;
+			display: block;
+			font-size: 12px;
+			padding: 10px;
+			width: 100%;
+		}
+    #form {
+			width: 600px;
+			margin: 20vh auto 0 auto;
+			padding: 20px;
+			background-color: whitesmoke;
+			border-radius: 4px;
+			font-size: 12px;
+		}
+		
+		
+
+</style>
+
+
+</head>
+
+    
+
+<body bgcolor="silver" font-color="black" width="600px">
+  <div class="container">
+
+  <form id="form" action="welcome1.html" >
+
+<table class="table1" border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<center><tr>
+   <td><h1><center><u>Registration Form </u></center></h1></td>
+</tr><center>
+
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<tr>
+  <div class="input-control">
+    <td align='center'>First Name:</td>
+    <td><input  type='text' name='name' id='name' pattern="[A-Za-z]{3,10}" title="name should 
+include only alphabets" required>
+  
+      <div style="color: red;" class="error"></div></td>
+    </div>
+  
+</tr>
+
+<tr>
+  <div class="input-control">
+
+    <td align='center'>Last Name:</td>
+    <td><input type='text' name='name' id='lname' pattern="[A-Za-z]{2,10}" title="name should 
+include only alphabets" required>
+  
+      <div style="color: red;" class="error"></div></td>
+    </div>
+</tr>
+
+<tr>
+  <div class="input-control">
+
+    <td align='center'>Nick Name:</td>
+    <td><input type='text' name='name' id='nname' pattern="[A-Za-z]{2,10}" title="name should 
+include only alphabets"  required>
+
+ 
+      <div style="color: red;" class="error"></div></td>
+    </div>
+</tr>
+
+<tr>
+  <div class="input-control">
+
+    <td align='center'>Email:</td>
+    <td><input type='email' name='email' id='email'required>
+ 
+      <div style="color: red;" class="error"></div></td>
+    </div>
+</tr>
+
+<tr>
+  <div class="input-control">
+
+    <td align='center'>Password:</td>
+    <td><input type='password' name='name' id='password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}" title=
+"must contain atleast one number and Uper case and lower case letter and atleast 4 or more characters " required>
+  
+      <div style="color: red;" class="error"></div></td>
+    </div>
+</tr>
+
+<tr>
+  <div class="input-control">
+
+    <td align='center'>Date Of Birth:</td>
+    <td><input type='date' name='name' id='dob'required>
+  
+    <div style="color: red;" class="error"></div></td>
+  </div>
+</tr>
+
+
+<tr>
+  <div class="input-control">
+
+    <td align='center'>Gender:</td>
+    <td><input type='radio' name='gender' value='male' checked="checked required">Male
+        <input type='radio' name='gender' value='female'required>Female
+        <input type='radio' name='gender' value='others'required>Others
+      
+        <div style="color: red;" class="error"></div></td>
+      </div>
+</tr>
+
+
+<tr>
+  <div class="input-control">
+
+    <td align='center'>Mobile:</td>
+    <td><input type='tel' name='name'  id='mobile' pattern="[0-9]{2}-[0-9]{10}" title="please enter your country code 
+along with your phone number" placeholder="91-9876543212">
+ 
+      <div style="color: red;" class="error"></div></td>
+    </div>
+</tr>
+
+<tr>
+  <div class="input-control">
+
+    <td align='center'>Address:</td>
+    <td><textarea  name='name' id='address' rows='7' cols='50'required></textarea>
+  
+      <div style="color: red;" class="error"></div></td>
+    </div>
+<br>
+
+</tr>
+
+
+<table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
+<tr>
+    <td align='center'><input type='submit' name='submit' value="submit"  >
+     <td align='center'><input type='reset' name='REGISTER' value="reset "></td>
+
+     
+</tr>
+</form>
+  </div>
+</table>
+</table>
+
+</table>
+
+</body>
+
+</html>
+
+
